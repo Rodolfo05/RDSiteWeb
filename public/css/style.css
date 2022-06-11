@@ -1,0 +1,175 @@
+/* font-family: 'Fira Sans', sans-serif;
+font-family: 'Rubik', sans-serif;
+font-family: 'Ubuntu', sans-serif; */
+
+body {
+  background: white;
+}
+
+.main-wrapper {
+  height: 100vh;
+}
+
+h1{
+  font-family: 'Ubuntu', sans-serif;
+}
+
+h2{
+  font-family: 'Rubik', sans-serif;
+}
+
+p{
+  font-family: 'Rubik', sans-serif;
+}
+
+.nombre{
+  color: #FF8000;
+  font-size: 90px;
+}
+
+.subtitle{
+  color: #494949;
+  font-size: 50px;
+}
+
+.saludo{
+  color: #494949;
+  font-size: 30px;
+}
+
+.section {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.half {
+  background: #f9f9f9;
+  height: 50%;
+  width: 100%;
+  margin: 15px 0;
+}
+
+
+.imgBody {
+  height: 300px;
+  width: 415px;
+  position: relative;
+  top: 40px;
+}
+
+
+.redText {
+  color: #af1212;
+}
+
+.nav-link {
+  color: #FF8000 !important;
+  font-size: 22px;
+}
+
+.boton{
+  background-color: white;
+  color: #FF8000;
+}
+
+a:hover {
+  color: #ad5600!important;
+}
+
+.imgLogo{
+  width: 70px;
+}
+
+.imgLogoSquare{
+  width: 95px;
+  height: 95px;
+}
+
+.carousel-inner img {
+  margin: auto;
+}
+
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23af1212' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+ }
+ 
+ .carousel-control-next-icon {
+   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23af1212' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+ }
+
+ .carousel .carousel-indicators li {
+  background-color: #FF8000;
+  background-color: rgba(70, 70, 70, 0.25);
+}
+
+.carousel .carousel-indicators .active {
+  background-color: #FF8000;
+}
+
+p.normal {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+}
+
+
+p.thicker {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 900;
+}
+
+.cardExp{
+  width: 18rem;
+  height: 17rem;
+  border-radius: 1.5rem;
+}
+
+.cardProyect{
+
+  width: 18rem;
+  height: 26rem;
+  border-radius: 1.5rem;
+}
+
+.card:hover{
+  color: #FF8000;
+  border-color: #FF8000;
+} 
+/* 
+.card-body:hover{
+  background-color: #af1212;
+  border-color: #af1212;
+  border-bottom-left-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+} */
+
+.imgCircle {
+  border-radius: 16%;
+}
+
+.imgCarousel{
+  width: 860px;
+  height: 480px;
+}
+
+.modalProyecto{
+  left: -206px;
+  width: 926px;
+}
+
+@media only screen and (max-width: 400px) {
+   
+  .imgBody {
+    height:280px;
+    width:320px;   
+  }
+
+  .card{
+    width: 100%;
+  }
+
+  #imgLogo{
+    height:60px;
+    width:80px;  
+  }
+}
