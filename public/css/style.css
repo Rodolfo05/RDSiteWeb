@@ -6,15 +6,11 @@ body {
   background: white;
 }
 
-.main-wrapper {
-  height: 100vh;
-}
-
-h1{
+/* h1, h2{
   font-family: 'Ubuntu', sans-serif;
-}
+} */
 
-h2{
+h1,h2{
   font-family: 'Rubik', sans-serif;
 }
 
@@ -27,7 +23,14 @@ p{
   font-size: 90px;
 }
 
-.subtitle{
+.titulo{
+  position: relative;
+  bottom: 12%;
+
+}
+
+
+.subtitulo{
   color: #494949;
   font-size: 50px;
 }
@@ -52,8 +55,8 @@ p{
 
 
 .imgBody {
-  height: 300px;
-  width: 415px;
+  height: 456px;
+  width: 853px;
   position: relative;
   top: 40px;
 }
@@ -74,7 +77,8 @@ p{
 }
 
 a:hover {
-  color: #ad5600!important;
+  color: #FF8000!important;
+  border-color: #FF8000!important;
 }
 
 .imgLogo{
@@ -157,7 +161,153 @@ p.thicker {
   width: 926px;
 }
 
-@media only screen and (max-width: 400px) {
+.divTituloCentrado{
+  position: absolute;
+  left: 50%;
+  bottom: 88%;
+}
+
+.tituloCentrado{
+  position: relative;
+  left: -50%;
+  color: #FF8000;
+}
+
+#navbarNav{
+  position: absolute;
+  left: 68%;
+}
+
+@media screen and (max-width: 1300px){
+  #menu{
+    left: -440px;
+  }
+  
+  #nav-bar{
+    width: 1727px;
+  } 
+}
+
+@media screen and (max-width: 2100px){
+  
+  .nombre {
+    /* color: rgb(255, 0, 200) !important; */
+    color: #FF8000;
+    font-size: 70px;
+  }
+
+  .subtitulo{
+    font-size: 30px;
+  }
+
+  .imgBody {
+    height: 230px;
+    width: 322px;
+  }
+}
+
+@media screen and (max-width: 1800px){
+  
+  .nombre {
+    /* color: rgb(0, 34, 255) !important; */
+    color: #FF8000;
+    font-size: 70px;
+  }
+
+  .subtitulo{
+    font-size: 30px;
+  }
+
+  .imgBody {
+    height: 230px;
+    width: 322px;
+  }
+}
+
+@media screen and (max-width: 1680px){
+
+  .txtNav{
+    font-size: 14px !important;
+  }
+  
+  .nombre {
+    /* color: rgb(255, 0, 0) !important; */
+    color: #FF8000;
+    font-size: 70px;
+  }
+
+  .subtitulo{
+    font-size: 30px;
+  }
+
+  .imgBody {
+    height: 230px;
+    width: 322px;
+  }
+
+  .saludo{
+    font-size: 25px;
+  }
+  
+  .nombre{
+    font-size: 55px;
+  }
+
+  .subtitle{
+    font-size: 22px;
+  }
+
+  .subtitle2{
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 1200px){
+  
+  .nombre {
+    /* color: rgb(0, 255, 238) !important; */
+    color: #FF8000;
+    font-size: 70px;
+  }
+
+  .subtitulo{
+    font-size: 30px;
+  }
+
+  .imgBody {
+    height: 230px;
+    width: 322px;
+  }
+}
+
+
+@media screen and (max-width: 800px){
+  
+  .nombre {
+    /* color: chartreuse !important; */
+    color: #FF8000;
+    font-size: 70px;
+  }
+
+  .subtitulo{
+    font-size: 30px;
+  }
+
+  .imgBody {
+    height: 230px;
+    width: 322px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+
+  /* .LogoR{
+    height: ;
+  } */
+
+  .nombre {
+    font-size: 45px;
+  }
    
   .imgBody {
     height:280px;
@@ -168,8 +318,15 @@ p.thicker {
     width: 100%;
   }
 
-  #imgLogo{
-    height:60px;
-    width:80px;  
+  #LogoR{
+    height:70%;
+    width:70%;  
+  }
+
+  .fondo{
+    position: relative;
+    bottom: -5%;
   }
 }
+
+/*------------------------------------------------------------------------*/

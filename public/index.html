@@ -13,315 +13,488 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&family=Rubik&family=Ubuntu:wght@400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ceaae55f42.js" crossorigin="anonymous"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&family=Rubik&family=Ubuntu:wght@400&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/carouselProyectos.css">
+   <link rel="stylesheet" href="css/style.css"> 
+    <!-- <link rel="stylesheet" href="css/estilos.css"> -->
+    <!-- <link rel="stylesheet" href="css/carouselProyectos.css"> -->
+    <link rel="stylesheet" href="css/fullpage.css">
 
 
 </head>
 
 <body>
 
-    <div id="navbar-placeholder"></div>
+    <main id="fullpage">
 
-    <div class="main-wrapper">
-        <div class="section fondo col-xs-9">
-
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <p class="animate__animated animate__fadeInLeft thick saludo text-center">Hola, mi nombre es</p>
-                        <h1 class="animate__animated animate__fadeInLeft nombre text-center">Rodolfo Díaz</h1>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12 pl-4">
-                        <h2 class="animate__animated animate__fadeInLeft subtitle text-center">Ingeniero
-                            Informático - Analista Programador</h2>
-                        <h4 class="animate__animated animate__fadeInLeft text-center">Apasionado por el diseño e implementacion de soluciones</h4>
-                    </div>
-                </div>
-                <!-- <div class="row">
-                    <div class="col-md-12 text-center">
-                        <button class="btn btn-danger boton">Mas Información</button>
-                    </div>
-                </div> -->
-                <br>
-                <div class="row">
-                    <div class="col-md-12 text-center">
-                        <!-- <img class="animate__animated animate__fadeInLeft imgBody img-fluid" src="images/iconProgramming.png" alt="HTML"> -->
-                        <img class="animate__animated animate__fadeInLeft imgBody img-fluid" src="images/icon programming 2_gris.png" alt="HTML">
-                    </div>
-                </div>
-            </div>
-
-
+          <nav id="nav-bar" class="nav navbar navbar-expand-lg navbar-light">
+        <a href="#inicio" class="navbar-brand marca">
+            <!-- Local src="images/rlogoorange.png" // Server src="../../images/Rlogoorange.png" -->
+            <!-- Firebase  src="images/rlogoorange.png" -->
+            <img id="LogoR" src="images/rlogoorange.png" alt="" width="80">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul id="menu" class="col-md-12 menu">
+                <li data-menuanchor="inicio" class="active">
+                    <a class="txtNav" href="#inicio">Inicio</a>
+                </li>
+                <li data-menuanchor="productos" class="">
+                    <a class="txtNav" href="#experiencia">Experiencia</a>
+                </li>
+                <li data-menuanchor="productos" class="">
+                    <a class="txtNav" href="#proyectos">Proyectos</a>
+                </li>
+                <li data-menuanchor="contacto" class="">
+                    <a class="txtNav" href="#contacto">Contacto</a>
+                </li>
+            </ul>
         </div>
+    </nav>
+        <!-- <div class="main-wrapper"> -->
+
+            <section id="inicio" className="inicio">
+                <div className="contenido">
+                    <header>
+                        <div className="logo">
+                            <i class="fa-brands fa-codepen"></i>
+                            <h1>Rodo</h1>
+                        </div>
+
+                        <nav id="nav">
+                            <a href="#inicio">Inicio</a>
+                            <a href="#habilidades">Habilidades</a>
+                            <a href="#proyectos">Proyectos</a>
+                            <a href="#contacto">Contacto</a>
+                        </nav>
+
+                        <div id="icono-nav">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+
+                        <div className="redes">
+                            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-github"></i></a>
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        </div>
+                    </header>
+
+                    <div className="fila">
+                        <div className="col">
+                            <h2>Desarrollador Fullstack</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi harum libero vel magni fugit doloremque? Mollitia deleniti vitae, quaerat magnam reiciendis eos quis? Odio cumque amet facilis itaque ullam repudiandae.</p>
+                            <button className="btn btn-1">Descargar CV</button>
+                        </div>
+
+                        <div className="col">
+                            <div className="contenedor-img">
+                                <img src="/images/programming1.jpg" className="img1" alt="" />
+                            </div>
+                        </div>
+
+                    </div>
 
 
-        <!-- <div class="section left col-xs-3">
-            <div class="half">
-                <h4>Experiencia</h4>
-            </div>
-            <div class="half">
-                <h4>Bottom left</h4>
-            </div>
-        </div> -->
-        <!-- 
-        <div id="experiencia" class="section">
-            <div class="container-fluid">
-                <div class="card">
-                    <h5 class="card-header">Experiencia</h5>
-                    <div class="card-body">
-                        <h5 class="card-title">3 años</h5>
-                        <p class="card-text">Trabajando con diversas tecnologias.</p>
+                </div>
+            </section>
+     
 
-                        <div class="row">
-                            <div class="col-md-2 d-flex flex-row justify-content-center alig-items-center">
-                                <img src="images/html_logo.png" class="imgLogo" alt="HTML">
-                            </div>
-                            <div class="col-md-2 d-flex flex-row justify-content-center alig-items-center">
-                                <img src="images/css_logo.png" class="imgLogo" alt="HTML">
-                            </div>
-                            <div class="col-md-2 d-flex flex-row justify-content-center alig-items-center">
-                                <img src="images/js_logo.png" class="imgLogoSquare" alt="HTML">
-                            </div>
-                            <div class="col-md-2 d-flex flex-row justify-content-center alig-items-center">
-                                <img src="images/jquery_logo.png" class="imgLogoSquare" alt="HTML">
-                            </div>
-                            <div class="col-md-2 d-flex flex-row justify-content-center alig-items-center">
-                                <img src="images/csharp_logo.png" class="imgLogoSquare" alt="HTML">
-                            </div>
-                            <div class="col-md-2 d-flex flex-row justify-content-center alig-items-center">
-                                <img src="images/sqlserver_logo.png" class="imgLogoSquare" alt="HTML">
-                            </div>
+        <header class="section header">
+            <div class="fondo col-xs-9">
 
-                        </div> -->
+                <div class="container">
 
+                    <br />
+                    <br />
 
-        <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-        <!-- </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p class="animate__animated animate__fadeInLeft thick saludo text-center">Hola, mi
+                                nombre es</p>
+                            <h1 class="animate__animated animate__fadeInLeft nombre text-center">Rodolfo Díaz</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 pl-4">
+                            <h2 class="animate__animated animate__fadeInLeft subtitle text-center">Ingeniero
+                                Informático - Analista Programador</h2>
+                            <h4 class="animate__animated animate__fadeInLeft subtitle2 text-center">Apasionado por el
+                                diseño e
+                                implementacion de soluciones</h4>
+                        </div>
+                    </div>
+
+                    <br>
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <!-- <img class="animate__animated animate__fadeInLeft imgBody img-fluid" src="images/iconProgramming.png" alt="HTML"> -->
+                            <img class="animate__animated animate__fadeInLeft imgBody img-fluid"
+                                src="images/icon programming 2_v3.png" alt="HTML">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contenedor-icono">
+                    <p><a href="#experiencia" class="texto-blanco"><i class="fas fa-chevron-down"></i></a></p>
                 </div>
             </div>
-        </div> -->
 
-        <hr/>
 
-        <div id="exp" class="container py-5">
-            <div>
+            </div>
+        </header>
+
+
+        <!--=========== EXPERIENCIA ============================-->
+
+
+
+        <section id="exp" class="section experiencia container-fluid">
+
+
+            <div class="divTituloCentrado">
+                <div class="tituloCentrado">
+                    <h1 class="text-center titlePage">Experiencia</h1>
+                </div>
+            </div>
+
+            <div class="desktop-v">
                 <div class="row">
-                    <span><img src="images/deco1.png"></span>
-            <h1 class="text-center">Experiencia</h1>
+                    <div class="col-md-4 pb-3 d-flex justify-content-center">
+                        <div class="card cardExp">
+                            <img class="card-img-top imgCircle" src="images/logoJsHtmlCss2.png" height="140" width="300"
+                                alt="Card image cap">
+                            <div class="card-body text-center">
+                                <p class="card-text">Cuento con experiencia en desarrollo de paginas web utilizando
+                                    HTML, CSS y Javascript.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 pb-3 d-flex justify-content-center">
+                        <div class="card cardExp">
+                            <img class="card-img-top imgCircle" src="images/bootstrap_logo.png" height="140" width="100"
+                                alt="Card image cap">
+                            <div class="card-body text-center">
+                                <p class="card-text">Utilización de la herramienta Bootstrap en diversos proyectos.
+                                    Desde su version 3.x hasta 5.x.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 pb-3 d-flex justify-content-center">
+                        <div class="card cardExp">
+                            <img class="card-img-top imgCircle" src="images/sqlserver_oracle_logo.png" height="120"
+                                width="100" alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text">Gestión y manejo de datos en bases de datos relacionales SQL Server
+                                    y Oracle.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 pb-3 d-flex justify-content-center">
+                        <div class="card cardExp">
+                            <img class="card-img-top imgCircle" src="images/csharp_logo.png" height="140" width="300"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text">Experiencia en el desarrollo de API's en en el framework .NET Core
+                                    y desarrollo en lenguaje C#.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 pb-3 d-flex justify-content-center">
+                        <div class="card cardExp">
+                            <img class="card-img-top imgCircle" src="images/React_logo.png" height="100" width="300"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text">Conocimientos basicos en la biblioteca de javascript React.
+                                    Construccion de pequeñas aplicaciones web.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 pb-3 d-flex justify-content-center">
+                        <div class="card cardExp">
+                            <img class="card-img-top imgCircle" src="images/git_logo.png" height="140" width="300"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text">Manejo de Git para mantenimiento y control de código en diferentes
+                                    proyectos.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <br>
 
-            <div class="row">
-                <div class="col-md-4 pb-3">
-                    <div class="card cardExp">
-                        <img class="card-img-top imgCircle" src="images/logoJsHtmlCss2.png" height="140" width="300" alt="Card image cap">
-                        <div class="card-body text-center">
-                            <p class="card-text">Cuento con experiencia en desarrollo de paginas web utilizando HTML, CSS y Javascript.</p>
+            <div class="mobile-v" style="display: none;">
+
+                <div id="accordion">
+
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"
+                                    aria-expanded="true" aria-controls="collapseOne">
+                                    HTML, CSS y JS
+                                </button>
+                            </h5>
+                        </div>
+
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                            data-parent="#accordion">
+                            <div class="card-body">
+                                Cuento con experiencia en desarrollo de paginas web utilizando HTML, CSS y Javascript.
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4 pb-3">
-                    <div class="card cardExp">
-                        <img class="card-img-top imgCircle" src="images/bootstrap_logo.png" height="140" width="100" alt="Card image cap">
-                        <div class="card-body text-center">
-                            <p class="card-text">Utilización de la herramienta Bootstrap en diversos proyectos. Desde su version 3.x hasta 5.x.</p>
+
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                                    aria-expanded="false" aria-controls="collapseTwo">
+                                    Bootstrap
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                            <div class="card-body">
+                                Utilización de la herramienta Bootstrap en diversos proyectos. Desde su version 3.x
+                                hasta 5.x.
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4 pb-3">
-                    <div class="card cardExp">
-                        <img class="card-img-top imgCircle" src="images/sqlserver_oracle_logo.png" height="120" width="100" alt="Card image cap">
-                        <div class="card-body">
-                            <p class="card-text">Gestión y manejo de datos en bases de datos relacionales SQL Server y Oracle.</p>
+
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse"
+                                    data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    SQL Server, Oracle
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                            data-parent="#accordion">
+                            <div class="card-body">
+                                Gestión y manejo de datos en bases de datos relacionales SQL Server y Oracle.
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4 pb-3">
-                    <div class="card cardExp">
-                        <img class="card-img-top imgCircle" src="images/csharp_logo.png" height="140" width="300" alt="Card image cap">
-                        <div class="card-body">
-                            <p class="card-text">Experiencia en el desarrollo de API's en en el framework .NET Core y desarrollo en lenguaje C#.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 pb-3">
-                    <div class="card cardExp">
-                        <img class="card-img-top imgCircle" src="images/React_logo.png" height="100" width="300" alt="Card image cap">
-                        <div class="card-body">
-                            <p class="card-text">Conocimientos basicos en la biblioteca de javascript React. Construccion de pequeñas aplicaciones web.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 pb-3">
-                    <div class="card cardExp">
-                        <img class="card-img-top imgCircle" src="images/git_logo.png" height="140" width="300" alt="Card image cap">
-                        <div class="card-body">
-                            <p class="card-text">Manejo de Git para mantenimiento y control de código en diferentes proyectos.</p>
-                        </div>
-                    </div>
+
                 </div>
             </div>
 
-        </div>
+        </section>
 
         <!--=========== PROYECTOS ============================-->
 
-        <hr/>
+        <section id="projects" class="section proyectos container-fluid">
 
-        <div id="proyectos" class="container py-5">
-            <h1 class="text-center">Proyectos</h1>
-            <br>
-
-            <div class="row">
-                <div class="col-md-4 pb-3">
-                    <div id="proy-1" class="card cardProyect">
-                        <img class="card-img-top imgCircle" src="images/enContruccion.png"  height="280" width="300" alt="Card image cap">
-                        <div class="card-body ">
-                            <p class="card-text">Proximamente mas información de los proyectos...</p>
-                            <div class="text-center">
-                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                                    Ver mas...
-                                  </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 pb-3">
-                    <div id="proy-1" class="card cardProyect">
-                        <img class="card-img-top imgCircle" src="images/enContruccion.png"  height="280" width="300" alt="Card image cap">
-                        <div class="card-body ">
-                            <p class="card-text">Proximamente mas información de los proyectos...</p>
-                            <div class="text-center">
-                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                                    Ver mas...
-                                  </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 pb-3">
-                    <div id="proy-1" class="card cardProyect">
-                        <img class="card-img-top imgCircle" src="images/enContruccion.png"  height="280" width="300" alt="Card image cap">
-                        <div class="card-body ">
-                            <p class="card-text">Proximamente mas información de los proyectos...</p>
-                            <div class="text-center">
-                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                                    Ver mas...
-                                  </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-md-4 pb-3">
-                    <div id="proy-1" class="card cardProyect">
-                        <img class="card-img-top imgCircle" src="images/enContruccion.png"  height="280" width="300" alt="Card image cap">
-                        <div class="card-body ">
-                            <p class="card-text">Proximamente mas información de los proyectos...</p>
-                            <div class="text-center">
-                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                                    Ver mas...
-                                  </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 pb-3">
-                    <div id="proy-1" class="card cardProyect">
-                        <img class="card-img-top imgCircle" src="images/enContruccion.png"  height="280" width="300" alt="Card image cap">
-                        <div class="card-body ">
-                            <p class="card-text">Proximamente mas información de los proyectos...</p>
-                            <div class="text-center">
-                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                                    Ver mas...
-                                  </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 pb-3">
-                    <div id="proy-1" class="card cardProyect">
-                        <img class="card-img-top imgCircle" src="images/enContruccion.png"  height="280" width="300" alt="Card image cap">
-                        <div class="card-body ">
-                            <p class="card-text">Proximamente mas información de los proyectos...</p>
-                            <div class="text-center">
-                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                                    Ver mas...
-                                  </button>
-                            </div>
-                        </div>
-                    </div>
+            <div class="divTituloCentrado">
+                <div class="tituloCentrado">
+                    <h1 class="text-center titlePage">Proyectos</h1>
                 </div>
             </div>
 
-        </div>
-
-        
-
-    </div>
 
 
-    <!-- 
-        <div class="container">
-                <div class="card">
-                  <h3 class="title">Card 1</h3>
-                  <div class="">
-                        <img src="images/sqlserver_logo.png" class="imgLogoSquare" alt="HTML">
-                  </div>
+
+
+            <div class="row">
+
+                <div class="col-md-4 pb-3 d-flex justify-content-center">
+                    <div id="proy-1" class="card cardProyect">
+                        <a href="https://diccionario-inf-app.web.app/" target="_blank">
+                            <img class="card-img-top " src="images/proyectos/logo_diccionarioApp.png" height="280"
+                                width="300" alt="Card image cap">
+                        </a>
+                        <div class="card-body text-center">
+                            <p class="card-text">Diccionario de la Informática</p>
+                            <div class="text-center">
+                                <button type="button" disabled class="btn btn-primary" data-toggle="modal"
+                                    data-target="#modalDiccionarioApp">
+                                    Acerca del proyecto
+                                </button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
+                <div class="col-md-4 pb-3 d-flex justify-content-center">
+                    <div id="proy-1" class="card cardProyect">
+                        <a href="https://electromarket-352ef.web.app" target="_blank">
+                            <img class="card-img-top" style="position: relative; bottom: -100px"
+                                src="images/proyectos/logo_electroMarket.png" height="148" width="210"
+                                alt="Card image cap">
+                        </a>
+                        <div class="card-body text-center" style="position: relative; bottom: -126px">
+                            <p class="card-text">Electro Market</p>
+                            <div class="text-center">
+                                <button type="button" disabled disabled class="btn btn-primary" data-toggle="modal"
+                                    data-target="#modalProyectos">
+                                    Acerca del proyecto
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 
+                <div class="col-md-4 pb-3 d-flex justify-content-center">
+                    <div id="proy-1" class="card cardProyect">
+                        <div class="card-body ">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <img class="card-img-top" style="height: 100%; width: 100%;" src="images/proyectos/logo_electroMarket.png" alt="Card image cap">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
 
-                <div class="card">
-                  <h3 class="title">Card 2</h3>
-                  <div class="bar">
-                    <div class="emptybar"></div>
-                    <div class="filledbar"></div>
-                  </div>
-                  <div class="circle">
-                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
-                    <circle class="stroke" cx="60" cy="60" r="50"/>
-                  </svg>
-                  </div>
-                </div>
-                <div class="card">
-                  <h3 class="title">Card 3</h3>
-                  <div class="bar">
-                    <div class="emptybar"></div>
-                    <div class="filledbar"></div>
-                  </div>
-                  <div class="circle">
-                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
-                    <circle class="stroke" cx="60" cy="60" r="50"/>
-                  </svg>
-                  </div>
-                </div>
-                <div class="card">
-                  <h3 class="title">Card 4</h3>
-                  <div class="bar">
-                    <div class="emptybar"></div>
-                    <div class="filledbar"></div>
-                  </div>
-                  <div class="circle">
-                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
-                    <circle class="stroke" cx="60" cy="60" r="50"/>
-                  </svg>
-                  </div>
-                </div>
-              </div>
+                                    <p class="card-text" style="margin: 100px">Electro Market</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
 
-    </div> -->
+                                    <div class="text-center">
+                                        <button type="button" class="btn btn-primary" data-toggle="modal"
+                                            data-target="#exampleModal">
+                                            Ver mas...
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+
+                <div class="col-md-4 pb-3 d-flex justify-content-center">
+                    <div id="proy-1" class="card cardProyect">
+                        <a href="https://quiz-app-1e823.web.app" target="_blank">
+                            <img class="card-img-top " src="images/proyectos/logo_quizApp.png" height="280" width="300"
+                                alt="Card image cap">
+                        </a>
+                        <div class="card-body text-center">
+                            <p class="card-text">Quiz App!</p>
+                            <div class="text-center">
+                                <button type="button" disabled class="btn btn-primary" data-toggle="modal"
+                                    data-target="#modalProyectos">
+                                    Acerca del proyecto
+
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 
+                    <div class="col-md-4 pb-3">
+                        <div id="proy-1" class="card cardProyect">
+                            <img class="card-img-top imgCircle" src="images/enContruccion.png" height="280" width="300"
+                                alt="Card image cap">
+                            <div class="card-body ">
+                                <p class="card-text">Proximamente mas información de los proyectos...</p>
+                                <div class="text-center">
+                                    <button type="button" class="btn btn-primary" data-toggle="modal"
+                                        data-target="#exampleModal">
+                                        Ver mas...
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 pb-3">
+                        <div id="proy-1" class="card cardProyect">
+                            <img class="card-img-top imgCircle" src="images/enContruccion.png" height="280" width="300"
+                                alt="Card image cap">
+                            <div class="card-body ">
+                                <p class="card-text">Proximamente mas información de los proyectos...</p>
+                                <div class="text-center">
+                                    <button type="button" class="btn btn-primary" data-toggle="modal"
+                                        data-target="#exampleModal">
+                                        Ver mas...
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 pb-3">
+                        <div id="proy-1" class="card cardProyect">
+                            <img class="card-img-top imgCircle" src="images/enContruccion.png" height="280" width="300"
+                                alt="Card image cap">
+                            <div class="card-body ">
+                                <p class="card-text">Proximamente mas información de los proyectos...</p>
+                                <div class="text-center">
+                                    <button type="button" class="btn btn-primary" data-toggle="modal"
+                                        data-target="#exampleModal">
+                                        Ver mas...
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+            </div>
+
+        </section>
+
+        <!--============= CONTACTO =================-->
+
+
+        <footer class="section footer">
+            <div class="divTituloCentrado">
+                <div class="tituloCentrado">
+                    <h1 class="text-center titlePage">Contacto</h1>
+                </div>
+            </div>
+            <p class="redes-sociales">
+                <a data-toggle="modal" data-target="#modalContacto" class="linkedin">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a data-toggle="modal" data-target="#modalContacto" class="github">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a data-toggle="modal" data-target="#modalContacto" class="gmail">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </p>
+        </footer>
+
+
+        <!-- <footer class="section footer">
+
+            <div class="divTituloCentrado">
+                <div class="tituloCentrado">
+                    <h1 class="text-center ">Contacto</h1>
+                </div>
+            </div>
+
+
+            <p class="redes-sociales">
+
+                <a href="#" class="facebook">
+                    <i class="fab fa-facebook-square"></i>
+                </a>
+                <a href="#" class="twitter">
+                    <i class="fab fa-twitter-square"></i>
+                </a>
+                <a href="#" class="instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </p>
+        </footer> -->
+
+
+        <!-- </div> -->
+
+    </main>
+
 
     <div id="modals-proyectos"></div>
+    <div id="modal-DiccionarioApp"></div>
 
 
 
@@ -352,7 +525,7 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.js"></script>
     <script src="js/plugins/opcionesFullPage.js"></script>
-    <script src="js/index.js"></script>
+    <script src="js/index.js?v=1.1"></script>
     <script src="js/plugins/carousel.js"></script>
 
 

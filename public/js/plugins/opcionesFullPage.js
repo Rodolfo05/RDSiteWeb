@@ -19,8 +19,8 @@ const seccionesPagina = new fullpage('#fullpage', {
 	// ──────────────────────────────────────────────────
 		 navigation: true, // Muesta la barra de navegación.
 		 menu: '#menu', // Menu de navegación.
-		 anchors: ['inicio', 'productos', 'contacto'], // Anclas, las usamos para identificar cada seccion y poder acceder a ellas con el menu.
-		 navigationTooltips: ['Inicio', 'Productos', 'Contacto'], // Tooltips que mostrara por cada boton.
+		 anchors: ['inicio', 'productos', 'proyectos', 'contacto'], // Anclas, las usamos para identificar cada seccion y poder acceder a ellas con el menu.
+		 navigationTooltips: ['Inicio', 'Productos', 'Proyectos', 'Contacto'], // Tooltips que mostrara por cada boton.
 		 showActiveTooltip: false, // Mostrar tooltip activa.
 
 
@@ -34,10 +34,11 @@ const seccionesPagina = new fullpage('#fullpage', {
 	//   :::::: Slides
 	// ──────────────────────────────────────────────────
 		 controlArrows: true, // Flechas del slide
-		 slidesNavigation: false, // Indicadores del slide
-         afterLoad: function(origin, destination){
-            if(destination.anchor == 'contacto'){
-                document.querySelector('.footer h2').style.opacity = 1;
-            }
-         }
+		 slidesNavigation: false
+		//  , // Indicadores del slide
+        //  afterLoad: function(origin, destination){
+        //     if(destination.anchor == 'contacto'){
+        //         document.querySelector('.footer h2').style.opacity = 1;
+        //     }
+        //  }
 });
